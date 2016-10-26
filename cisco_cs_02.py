@@ -1,7 +1,7 @@
 #Program to scan a config file and output objects
 #Author:	A. Gittins
 #Date:		26/10/16
-#Version:	1
+#Version:	2
 
 
 
@@ -24,7 +24,7 @@ for object in objectListFile:
     loopObject = object
     print loopObject
     #print ""
-        for line in configFile:
+    for line in configFile:
         print "Starting lookup for " + loopObject
         if loopObject in line:
             print str(loopObject + isIn)
