@@ -13,4 +13,4 @@ objct = [x.rstrip() for x in objectListFile]
 
 
 dupObjectList = [o for o in objct for c in conf if c.endswith(o)]
-print (dupObjectList)
+pprint.pprint(sorted(dupObjectList))
